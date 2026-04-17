@@ -16,7 +16,7 @@ Videojuego 2D desarrollado en Godot que combina mecánicas de plataformas con de
 
 ## ▶️ Cómo ejecutar el proyecto
 1. Clonar el repositorio:
-   git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/marialuz1982/Pink-Man-Game)
+   git clone https://github.com/marialuz1982/Pink-Man-Game.git
 2. Abrir Godot Engine  
 3. Importar el proyecto desde la carpeta descargada  
 4. Ejecutar el proyecto (botón "Play")  
