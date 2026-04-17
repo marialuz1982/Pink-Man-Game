@@ -1,0 +1,321 @@
+[gd_scene format=4 uid="uid://c55lo800mog62"]
+
+[ext_resource type="Texture2D" uid="uid://2q5odqwxwdbt" path="res://assets/images/Tilemap/Terrain (16x16).png" id="1_8u554"]
+[ext_resource type="Texture2D" uid="uid://35wfkhkh8wg7" path="res://assets/images/Background/Level1.png" id="1_ylpj7"]
+[ext_resource type="PackedScene" uid="uid://dgev3t5y3o5lu" path="res://scenes/jugador.tscn" id="2_cvf23"]
+[ext_resource type="PackedScene" uid="uid://cq1h7wouqo36e" path="res://scenes/caracol.tscn" id="4_qnoa1"]
+[ext_resource type="PackedScene" uid="uid://cjxuinkth1w8p" path="res://scenes/apple.tscn" id="5_su78w"]
+[ext_resource type="PackedScene" uid="uid://dfcasado33ev" path="res://scenes/caracol2.tscn" id="5_ylpj7"]
+[ext_resource type="Texture2D" uid="uid://doo7avcabllxq" path="res://assets/images/Tilemap/Checkpoint (Flag Idle)(64x64).png" id="6_brl28"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ylpj7"]
+texture = ExtResource("1_ylpj7")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cvf23"]
+texture = ExtResource("1_8u554")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:9/0 = 0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_b7ohp"]
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = ""
+custom_data_layer_0/type = 0
+sources/0 = SubResource("TileSetAtlasSource_cvf23")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6hv7"]
+atlas = ExtResource("6_brl28")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4m2ls"]
+atlas = ExtResource("6_brl28")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53s5m"]
+atlas = ExtResource("6_brl28")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pstal"]
+atlas = ExtResource("6_brl28")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwu5y"]
+atlas = ExtResource("6_brl28")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26afr"]
+atlas = ExtResource("6_brl28")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whu4l"]
+atlas = ExtResource("6_brl28")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8e1c"]
+atlas = ExtResource("6_brl28")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_js7xi"]
+atlas = ExtResource("6_brl28")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xpa4"]
+atlas = ExtResource("6_brl28")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fbguy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6hv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4m2ls")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53s5m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pstal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwu5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26afr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whu4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8e1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_js7xi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5xpa4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brl28"]
+size = Vector2(20, 46.333336)
+
+[node name="LevelRoot" type="Node2D" unique_id=825666746]
+scale = Vector2(3, 3)
+metadata/_edit_horizontal_guides_ = [375.0]
+
+[node name="Panel" type="Panel" parent="." unique_id=228834029]
+offset_right = 433.6667
+offset_bottom = 240.66667
+theme_override_styles/panel = SubResource("StyleBoxTexture_ylpj7")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1841130610]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAAAAAAHAAkAAAAAAAwAAAAHAAkAAAAOAAwAAAAHAAgAAAAPAAwAAAAHAAgAAAAGAAgAAAAHAAgAAAAHAAgAAAAHAAgAAAAIAAgAAAAHAAgAAAABAAsAAAAHAAgAAAABAAwAAAAHAAkAAAACAAsAAAAHAAgAAAACAAwAAAAHAAkAAAADAAsAAAAHAAgAAAADAAwAAAAHAAkAAAAAAA0AAAAHAAkAAAAAAA4AAAAHAAkAAAABAA4AAAAHAAkAAAACAA4AAAAHAAkAAAADAA4AAAAHAAkAAAAEAA4AAAAHAAkAAAAFAA4AAAAHAAkAAAAGAA4AAAAHAAkAAAAHAA4AAAAHAAkAAAAIAA4AAAAHAAkAAAAJAA4AAAAHAAkAAAAKAA4AAAAHAAkAAAALAA4AAAAHAAkAAAAMAA4AAAAHAAkAAAANAA4AAAAHAAkAAAAOAA4AAAAHAAkAAAAPAA4AAAAHAAkAAAAQAA4AAAAHAAkAAAARAA4AAAAHAAkAAAASAA4AAAAHAAkAAAATAA4AAAAHAAkAAAAUAA4AAAAHAAkAAAAVAA4AAAAHAAkAAAAWAA4AAAAHAAkAAAAXAA4AAAAHAAkAAAAYAA4AAAAHAAkAAAAZAA4AAAAHAAkAAAAaAA4AAAAHAAkAAAABAAAAAAAHAAkAAAACAAAAAAAHAAkAAAAZAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAATAAAAAAAHAAkAAAASAAAAAAAHAAkAAAARAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAADAAAAAAAHAAkAAAABAA0AAAAHAAkAAAACAA0AAAAHAAkAAAADAA0AAAAHAAkAAAAFAAgAAAAHAAgAAAAAAAEAAAAHAAkAAAAAAAIAAAAHAAkAAAAAAAMAAAAHAAkAAAAAAAQAAAAHAAkAAAAAAAUAAAAHAAkAAAAAAAYAAAAHAAkAAAAAAAcAAAAHAAkAAAAAAAgAAAAHAAkAAAAAAAkAAAAHAAkAAAAAAAoAAAAHAAkAAAAAAAsAAAAHAAgAAAAaAAAAAAAHAAkAAAAaAAEAAAAHAAkAAAAaAAIAAAAHAAkAAAAaAAMAAAAHAAkAAAAaAAQAAAAHAAkAAAAaAAUAAAAHAAkAAAAaAAYAAAAHAAkAAAAaAAcAAAAHAAkAAAAaAAgAAAAHAAkAAAAaAAkAAAAHAAkAAAAaAAoAAAAHAAkAAAAKAAoAAAAHAAgAAAAMAAkAAAAHAAgAAAA=")
+tile_set = SubResource("TileSet_b7ohp")
+
+[node name="Jugador" parent="." unique_id=1301760902 instance=ExtResource("2_cvf23")]
+position = Vector2(35, 50)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=1605344134]
+
+[node name="Caracol2" parent="Enemies" unique_id=1106703763 instance=ExtResource("4_qnoa1")]
+position = Vector2(172.33334, 209)
+
+[node name="Caracol3" parent="Enemies" unique_id=1457953025 instance=ExtResource("5_ylpj7")]
+position = Vector2(281.6667, 210.66667)
+
+[node name="Apples" type="Node2D" parent="." unique_id=1249827333]
+
+[node name="Apple" parent="Apples" unique_id=805420814 instance=ExtResource("5_su78w")]
+position = Vector2(91.66667, 105.333336)
+
+[node name="Apple2" parent="Apples" unique_id=1377728756 instance=ExtResource("5_su78w")]
+position = Vector2(119.333336, 105.66667)
+
+[node name="Apple3" parent="Apples" unique_id=1255551546 instance=ExtResource("5_su78w")]
+position = Vector2(236, 176.66667)
+
+[node name="Apple4" parent="Apples" unique_id=885613320 instance=ExtResource("5_su78w")]
+position = Vector2(386.33334, 177.66666)
+
+[node name="Apple5" parent="Apples" unique_id=64926925 instance=ExtResource("5_su78w")]
+position = Vector2(165.66667, 127.33333)
+
+[node name="Apple6" parent="Apples" unique_id=1971468583 instance=ExtResource("5_su78w")]
+position = Vector2(314.33334, 179.66666)
+
+[node name="Apple7" parent="Apples" unique_id=422818130 instance=ExtResource("5_su78w")]
+position = Vector2(201.33334, 96.999985)
+
+[node name="Flag" type="AnimatedSprite2D" parent="." unique_id=285508207]
+position = Vector2(411, 200.33333)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_fbguy")
+autoplay = "default"
+frame_progress = 0.85893834
+
+[node name="Exit" type="Area2D" parent="." unique_id=1587077977]
+position = Vector2(434.33334, 206.33334)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit" unique_id=969622927]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_brl28")

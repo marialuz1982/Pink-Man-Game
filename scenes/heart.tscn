@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b3ssvp1maqlig"]
+
+[ext_resource type="Texture2D" uid="uid://uskv2hjci61c" path="res://assets/images/Hearts/hud_heartFull.png" id="1_v30as"]
+
+[node name="Heart" type="TextureRect" unique_id=2114818007]
+custom_minimum_size = Vector2(32, 32)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_v30as")

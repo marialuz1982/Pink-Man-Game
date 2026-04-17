@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bbuxx3i0c3a8o"]
+
+[ext_resource type="Script" uid="uid://btnyh565obyke" path="res://scenes/key.gd" id="1_fttkb"]
+[ext_resource type="Texture2D" uid="uid://oyqdtcn7o6bh" path="res://assets/images/Collectibles/key.png" id="2_wy8tx"]
+[ext_resource type="AudioStream" uid="uid://bxgxlmdovbgvv" path="res://assets/sounds/key.wav" id="3_wy8tx"]
+
+[sub_resource type="Animation" id="Animation_brs3p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.13962634]
+}
+
+[sub_resource type="Animation" id="Animation_jcln5"]
+resource_name = "idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:rotation")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.13962634, -0.13962634, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b4qnb"]
+_data = {
+&"RESET": SubResource("Animation_brs3p"),
+&"idle": SubResource("Animation_jcln5")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fttkb"]
+radius = 12.806249
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wy8tx"]
+size = Vector2(29.028816, 16.399052)
+
+[node name="Key" type="Area2D" unique_id=336751274]
+script = ExtResource("1_fttkb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1301402761]
+rotation = -0.13962634
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_wy8tx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1629834512]
+libraries/ = SubResource("AnimationLibrary_b4qnb")
+autoplay = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=388353793]
+position = Vector2(-12, 7)
+shape = SubResource("CircleShape2D_fttkb")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=29627348]
+position = Vector2(11.0932665, -5.369623)
+rotation = -0.6719518
+shape = SubResource("RectangleShape2D_wy8tx")
+
+[node name="Key" type="AudioStreamPlayer2D" parent="." unique_id=525511602]
+stream = ExtResource("3_wy8tx")
+bus = &"SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

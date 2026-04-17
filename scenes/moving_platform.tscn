@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c1t2vq3n22hby"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cbp6d"]
+load_path = "res://.godot/imported/Terrain (16x16).png-1db6c4f451bad98efb8c231dcaf2c1e4.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ms375"]
+size = Vector2(48, 16)
+
+[sub_resource type="Animation" id="Animation_1tdcd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mb26n"]
+resource_name = "move"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(80, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_afg43"]
+_data = {
+&"RESET": SubResource("Animation_1tdcd"),
+&"move": SubResource("Animation_mb26n")
+}
+
+[node name="MovingPlatform" type="Node2D" unique_id=1699119224]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1825302693]
+texture_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1843194834]
+texture_filter = 1
+position = Vector2(0, -1)
+texture = SubResource("CompressedTexture2D_cbp6d")
+region_enabled = true
+region_rect = Rect2(192.07146, 64.299576, 48.021606, 15.893761)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=176701659]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_ms375")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=1752153608]
+libraries/ = SubResource("AnimationLibrary_afg43")
+autoplay = &"move"
