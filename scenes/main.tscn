@@ -9,6 +9,9 @@
 [ext_resource type="AudioStream" uid="uid://bki3yfa41yar7" path="res://assets/sounds/game_over.wav" id="5_tbgi4"]
 [ext_resource type="Texture2D" uid="uid://bl4l2d2yeqk8g" path="res://assets/images/Background/you need a key.png" id="6_85g3d"]
 [ext_resource type="AudioStream" uid="uid://2ubyvh2hocdy" path="res://assets/sounds/win.wav" id="6_tefeu"]
+[ext_resource type="Texture2D" uid="uid://rt3y3ts5bpcy" path="res://assets/images/Keys/left-arrow.png" id="10_choun"]
+[ext_resource type="Texture2D" uid="uid://c1fpp5qlutalk" path="res://assets/images/Keys/right-arrow.png" id="11_ya4ey"]
+[ext_resource type="Texture2D" uid="uid://dmp8jj12nqoe1" path="res://assets/images/Keys/up-arrow.png" id="12_eb6dy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jyhfs"]
 bg_color = Color(0.03137255, 0.6, 0.6, 1)
@@ -300,6 +303,29 @@ stream = ExtResource("5_tbgi4")
 [node name="WinSound" type="AudioStreamPlayer2D" parent="." unique_id=834863016]
 process_mode = 3
 stream = ExtResource("6_tefeu")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1070088784]
+
+[node name="LeftButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=174854564]
+position = Vector2(9.999999, 291)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("10_choun")
+passby_press = true
+action = "left"
+
+[node name="RightButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=1382901957]
+position = Vector2(1164, 291)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("11_ya4ey")
+passby_press = true
+action = "right"
+
+[node name="JumpButton" type="TouchScreenButton" parent="CanvasLayer" unique_id=2031176643]
+position = Vector2(587, 641)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("12_eb6dy")
+passby_press = true
+action = "jump"
 
 [connection signal="pressed" from="HUD/GameOverPanel/CenterContainer/GameOverButons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="HUD/GameOverPanel/CenterContainer/GameOverButons/Main" to="." method="_on_main_pressed"]

@@ -18,7 +18,17 @@ func _ready() -> void:
 	#Setup the level
 	fade.modulate.a = 1.0
 	current_level_root = get_node("LevelRoot")
-	await _load_level(Global.level, true, false)	
+	#if not OS.has_feature("mobile"):
+		#$CanvasLayer.visible = false	
+	var width = DisplayServer.window_get_size().x
+
+	if width < 800:
+		$CanvasLayer.visible = true
+	else:
+		$CanvasLayer.visible = false
+	
+	await _load_level(Global.level, true, false)
+	
 
 #LEVEL MANAGMENT
 func _load_level(level_number: int, first_load: bool, reset_score: bool ) -> void:
@@ -139,6 +149,7 @@ func game_over():
 	get_tree().paused = true	
 	#$HUD/UIRoot.GameOverPanel.process_mode = Node.PROCESS_MODE_ALWAYS
 	$HUD/GameOverPanel.visible = true
+	$CanvasLayer.visible = false
 	#$GameOverSound.play()
 	
 
@@ -163,3 +174,32 @@ func _on_exit_pressed() -> void:
 func _on_main_pressed() -> void:
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://control.tscn")
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+func _process(_delta):
+	if OS.has_feature("web"):
+		var width = int(JavaScriptBridge.eval("window.innerWidth"))
+		if width < 900:
+			$CanvasLayer.visible = true
+		else:
+			$CanvasLayer.visible = false

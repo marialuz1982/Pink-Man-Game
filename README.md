@@ -40,19 +40,18 @@ Videojuego 2D desarrollado en Godot que combina mecánicas de plataformas con de
 
 ---
 
-## 📁 Estructura del proyecto (opcional)
-/scenes → escenas principales  
-/scripts → lógica del juego  
-/assets → imágenes, sonidos, recursos  
-
----
-
 ## ✨ Objetivo del proyecto
 Este proyecto fue desarrollado como práctica de desarrollo de videojuegos, aplicando conceptos como:
 - Lógica de juego  
 - Manejo de escenas  
 - Colisiones  
 - Organización de código  
+
+---
+
+## 🌐​ Pink Man Web
+- URL: https://pinkmanweb.netlify.app/
+- Repositorio: https://github.com/marialuz1982/Pink-Man-Web
 
 ---
 

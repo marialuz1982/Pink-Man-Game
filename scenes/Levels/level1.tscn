@@ -272,7 +272,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAHAAkAAAAAAAwAAAAHAAkAAAAOAAwAAAAHAAg
 tile_set = SubResource("TileSet_b7ohp")
 
 [node name="Jugador" parent="." unique_id=1301760902 instance=ExtResource("2_cvf23")]
-position = Vector2(35, 50)
+position = Vector2(35, 69.333336)
 
 [node name="Enemies" type="Node2D" parent="." unique_id=1605344134]
 
